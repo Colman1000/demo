@@ -5,20 +5,9 @@ meta {
 }
 
 post {
-  url: {{url}}/login/:view/all/:room-id?page=2&limit=30&type=listing
+  url: {{url}}/login
   body: json
   auth: none
-}
-
-params:query {
-  page: 2
-  limit: 30
-  type: listing
-}
-
-params:path {
-  room-id: 4
-  view: TOP
 }
 
 headers {

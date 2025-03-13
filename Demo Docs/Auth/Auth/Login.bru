@@ -1,0 +1,60 @@
+meta {
+  name: Login
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/login/:view/all/:room-id?page=2&limit=30&type=listing
+  body: json
+  auth: none
+}
+
+params:query {
+  page: 2
+  limit: 30
+  type: listing
+}
+
+params:path {
+  room-id: 4
+  view: TOP
+}
+
+headers {
+  : 
+}
+
+body:json {
+  {
+   "name": "John Doe" 
+  }
+}
+
+vars:pre-request {
+  : 
+}
+
+vars:post-response {
+  : 
+}
+
+docs {
+  # THIS IS H
+  
+  ## THIS IS H
+  
+  ### THIS IS H
+  
+  #### THIS IS H
+  
+  `This is a code block`
+  
+  
+  ```html
+  
+  <h1> hello </h1>
+  
+  ```
+  
+}
